@@ -1,0 +1,72 @@
+﻿h1 {
+	color: #3d8b7e;
+	background: lavender;
+	padding: 0.4em 0.5em;
+	border-left: solid 10px rgb(100, 237, 100);
+	border-bottom: solid 3px rgb(176, 222, 191);
+	background-color: aqua;
+	font-family: 'MS 明朝';
+}
+
+h2 {
+	color: orange;
+	background-color: white;
+	padding: 0.2em 0.3em;
+	font-size: 200%;
+}
+
+table {
+	border-style: solid;
+	border-width: 9px;
+	border-color: black;
+	background-color: blueviolet;
+	font-family: 'MS 明朝';
+}
+
+th {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	color: black;
+	background-color: greenyellow;
+}
+
+th.day {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	color: white;
+	background-color: red;
+}
+
+td {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	text-align: center;
+	color: black;
+	background-color:white;
+	padding: 1px 5px 1px 5px
+}
+
+strong{
+	color: red;
+	background-color: white;
+}
+
+th.one {
+	background-color: rgb(100, 237, 100);
+}
+
+th.two {
+	background-color: chartreuse;
+}
+td.one{
+	background-color: rgb(100, 237, 100);
+}
+td.two {
+	background-color: chartreuse
+}
+
+#my {color: purple}
+#floor{color: greenyellow}

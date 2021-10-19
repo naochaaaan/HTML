@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE 東京工科大学 [
+<!ELEMENT 東京工科大学 (学部+, 学環, 学部*)>
+<!ELEMENT 学部 (#PCDATA)>
+<!ATTLIST 学部 学部長 CDATA #REQUIRED>
+<!ATTLIST 学部 学科数 CDATA #IMPLIED>
+<!ELEMENT 学環 (#PCDATA)>
+<!ATTLIST 学環 学環長 CDATA #REQUIRED>
+<!ATTLIST 学部 科目群数 CDATA #IMPLIED>
+]>
+
+<東京工科大学>
+  <学部 学部長="伊藤丙雄">デザイン</学部>
+  <学部 学部長="篠原一彦">医療保健</学部>
+  <学部 学部長="山下俊">工</学部>
+  <学部 学部長="柿本正憲">メディア</学部>
+  <学部 学部長="横山憲二">応用生物</学部>
+  <学環 学環長="勝浦寿美">教養</学環>
+</東京工科大学>

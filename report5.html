@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>レポート5</title>
+    <style type="text/css">
+        span.what {
+          color: gray;
+          font-style: italic;
+        }
+    </style>
+    <script type="text/javascript" src="report5.js">
+    </script>
+  </head>
+
+  <body>
+    <h1>即席麺人気ランキング</h1>
+
+    <h3>今週の第1位（カップラーメン）</h3>
+    <p>
+      <span id="cup" class="what" onclick="show_cup()">何かな？</span> でした！
+    </p>
+
+    <h3>今週の第1位（袋麺・インスタント麺）</h3>
+    <p>
+      <span id="instant" class="what" onclick="show_instant()">何かな？</span> でした！
+    </p>
+
+    <h3>ランキング詳細</h3>
+    <p>
+      <span onclick="showlist()">リスト</span>
+      <span onclick="showtable()">テーブル</span>
+    </p>
+
+    <div id="rank">
+    </div>
+
+    
+<h3>プログラムの解説</h3>
+    <p>
+      HTML
+    </p>
+<p>
+    8 ~ 12行目 : 23、28行目のclass属性whatを持つspanタグの文字を灰色に設定、フォントをitalicに変更する。<br/>
+    23行目 : spanタグにid属性cupをつけて、「何かな？」をクリックするとshow_cupメソッドが呼び出される。<br />
+    28行目 : spanタグにid属性instantをつけて、「何かな？」をクリックするとshow_instantメソッドが呼び出される。<br />
+    33行目 : spanタグのリストをクリックするとshowlistメソッドを呼び出す。<br />
+    34行目 : spanタグのテーブルをクリックするとshowtableメソッドを呼び出す。<br />
+    37行目 : divタグにid属性rankをつける。<br />
+</p>
+
+    <p>
+      JavaScript<br/>
+    </p>
+
+    <p>
+      「カップヌードル」を赤色で表示させる。<br/>
+      2行目 : getElementByIdメソッドにおいて、nodeにcupを代入する。<br/>
+      3行目 : nodesのtextContentを「カップヌードル」にする。<br/>
+      4行目 : nodesのstyle.colorをredにする。<br/>
+    </p>
+
+    <p>
+      「お椀で食べるどん兵衛」を青色で表示する。<br/>
+      8行目 : getElementByIdメソッドにおいて、nodeにinstantを代入する。<br/>
+      9行目 : nodesのtextContentを「お椀で食べるどん兵衛」にする。<br/>
+      10行目 : nodesのstyle.colorをblueにする。<br/>
+    </p>
+
+    <p>
+      カップラーメン・袋麺・インスタント麺のランキングをリストで表示する。<br/>
+
+      18行目 : deletepageメソッドを呼び出す。<br/>
+      <br/>
+      20行目 : createElementメソッドにおいてulタグを作成し、listに代入する。<br/>
+      21行目 : getElementByIdメソッドでrankを取得し、appendChildメソッドでlistを追加する。<br/>
+<br />
+      23行目 : createElementメソッドでliタグを作成し、item1に代入する。<br/>
+      24行目 : item1のtextContentを「カップラーメン」にする。<br/>
+      25行目 : appendChildメソッドでitem1を追加する。<br/>
+<br />
+      27行目 : createElementメソッドでolタグを作成し、sublist1に代入する。<br/>
+      28行目 : item1にappendChildメソッドでsublist1を追加する。<br/>
+<br />
+      30行目 : createElementメソッドでliタグを作成し、subitem11に代入する。<br/>
+      31行目 : item1のtextContentを「カップラーメン」にする。<br/>
+      32行目 : sublist1にappendChildメソッドでsubitem11を追加する。<br/>
+<br />
+      34行目 : createElementメソッドでliタグを作成し、subitem12に代入する。<br/>
+      35行目 : item1のtextContentを「カップラーメン シーフードヌードル」にする。<br/>
+      36行目 : sublist1にappendChildメソッドでsubitem12を追加する。<br/>
+<br />
+      38行目 : createElementメソッドでliタグを作成し、subitem13に代入する。<br/>
+      39行目 : item1のtextContentを「カップラーメン カレー」にする。<br/>
+      40行目 : sublist1にappendChildメソッドでsubitem13を追加する。<br/>
+<br />
+      42行目 : createElementメソッドでulタグを作成し、listに代入する。<br/>
+      43行目 : getElementByIdメソッドでrankというオブジェクトを取得し、appendChildメソッドでlistを追加する。<br/>
+<br />
+      45行目 : createElementメソッドでliタグを作成し、item1に代入する。<br/>
+      46行目 : item1のtextContentを「袋麺・インスタント麺」にする。<br/>
+      47行目 : appendChildメソッドでitem1を追加する。<br/>
+<br />
+      49行目 : createElementメソッドでolタグを作成し、sublist1に代入する。<br/>
+      50行目 : item1へappendChildメソッドでsublist1を追加する。<br/>
+<br />
+      52行目 : createElementメソッドでliタグを作成し、subitem11に代入する。<br/>
+      53行目 : item1のtextContentを「お椀で食べるどん兵衛」にする。<br/>
+      54行目 : 27行目のsublist1へappendChildメソッドでsubitem11を追加する。<br/>
+<br />
+      56行目 : createElementメソッドでliタグを作成し、subitem12に代入する。<br/>
+      57行目 : item1のtextContentを「チキンラーメン」にする。<br/>
+      58行目 : 27行目のsublist1へappendChildメソッドでsubitem12を追加する。<br/>
+<br />
+      60行目 : createElementメソッドでliタグを作成し、subitem13に代入する。<br/>
+      61行目 : item1のtextContentを「チャンポンめん」にする。<br/>
+      62行目 : 27行目のsublist1へappendChildメソッドでsubitem13を追加する。<br/>
+    </p>
+
+    <p>
+      カップラーメン・袋麺・インスタント麺のランキングをテーブルで表示する。<br/>
+<br />
+      67行目 : deletepageメソッドを呼び出す。<br/>
+<br />
+      69行目 : createElementメソッドでtableタグを作成し、tableに代入する。<br/>
+      70行目 : tableのborderの太さを1にする。<br/>
+      71行目 : getElementByIdメソッドでrankを取得し、appendChildメソッドtableを追加する。<br/>
+<br/>
+      73行目 : createElementメソッドでtrタグを作成し、line1に代入する。<br/>
+      74行目 : 69行目のtableにappendChildメソッドでline1を追加する。<br/>
+      75行目 : createElementメソッドでtrタグを作成し、line2に代入する。<br/>
+      76行目 : 69行目のtableにappendChildメソッドでline2を追加する。<br/>
+      77行目 : createElementメソッドでtrタグを作成し、line3に代入する。<br/>
+      78行目 : 69行目のtableにappendChildメソッドでline3を追加する。<br/>
+      79行目 : createElementメソッドでtrタグを作成し、line4に代入する。<br/>
+      80行目 : 69行目のtableにappendChildメソッドでline4を追加する。<br/>
+<br />
+      83行目 : createElementメソッドでthタグを作成し、cell_1に代入する。<br/>
+      84行目 : cell_1のtextContentを「順位」にする。<br/>
+      85行目 : appendChildメソッドでline1にcell_1を追加する。<br/>
+<br />
+      87行目 : createElementメソッドでthタグを作成し、cell_2に代入する。<br/>
+      88行目 : cell_2のtextContentを「カップラーメン」にする。<br/>
+      89行目 : appendChildメソッドでline1にcell_2を追加する。<br/>
+<br />
+      91行目 : createElementメソッドでthタグを作成し、cell_3に代入する。<br/>
+      92行目 : cell_3のtextContentを「袋麺・インスタント麺」にする。<br/>
+      93行目 : appendChildメソッドでline1にcell_3を追加する。<br/>
+<br/>
+      96行目 : createElementメソッドでtdタグを作成し、cell_4に代入する。<br/>
+      97行目 : cell_4のtextContentを「1」にする。<br/>
+      98行目 : appendChildメソッドでline2にcell_4を追加する。<br/>
+<br />
+      100行目 : createElementメソッドでtdタグを作成し、cell_5に代入する。<br/>
+      101行目 : cell_5のtextContentを「カップヌードル」にする。<br/>
+      102行目 : appendChildメソッドでline2にcell_5を追加する。<br/>
+<br />
+      104行目 : createElementメソッドでtdタグを作成し、cell_6に代入する。<br/>
+      105行目 : cell_6のtextContentを「お椀で食べるどん兵衛」にする。<br/>
+      106行目 : appendChildメソッドでline2にcell_6を追加する。<br/>
+<br/>
+      109行目 : createElementメソッドでtdタグを作成し、cell_7に代入する。<br/>
+      110行目 : cell_7のtextContentを「2」にする。<br/>
+      111行目 : appendChildメソッドでline3にcell_7を追加する。<br/>
+<br />
+      113行目 : createElementメソッドでtdタグを作成し、cell_8に代入する。<br/>
+      114行目 : cell_8のtextContentを「カップヌードル シーフードヌードル」にする。<br/>
+      115行目 : appendChildメソッドでline3にcell_8を追加する。<br/>
+<br />
+      117行目 : createElementメソッドでtdタグを作成し、cell_9に代入する。<br/>
+      118行目 : cell_9のtextContentを「チキンラーメン」にする。<br/>
+      119行目 : appendChildメソッドでline3にcell_9を追加する。<br/>
+<br />
+      122行目 : createElementメソッドでtdタグを作成し、cell_10に代入する。<br/>
+      123行目 : cell_10のtextContentを「3」にする。<br/>
+      124行目 : appendChildメソッドでline4にcell_10を追加する。<br/>
+<br />
+      126行目 : createElementメソッドでtdタグを作成し、cell_11に代入する。<br/>
+      127行目 : cell_11のtextContentを「カップヌードル カレー」に設定する。<br/>
+      128行目 : appendChildメソッドでline4にcell_11を追加する。<br/>
+<br />
+      130行目 : createElementメソッドでtdタグを作成し、cell_12へ代入する。<br/>
+      131行目 : cell_12のtextContentを「チャンポンめん」にする。<br/>
+      132行目 : appendChildメソッドでline4にcell_12を追加する。<br/>
+    </p>
+  </body>
+
+</html>

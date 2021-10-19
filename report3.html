@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" href="./report3.css" />
+    <title>Web技術基礎 レポート3</title>
+</head>
+
+<body>
+
+    <h1>図書館利用案内</h1>
+
+    <h2>入館方法</h2>
+
+    <h3>本学の学生・教職員</h3>
+    <ul>
+        <li>学生証・教職員証により入館可能です</li>
+    </ul>
+
+    <h3>学外の方</h3>
+    <ul>
+        <li><span>他大学の方</span>
+            <ul>
+                <li>所属する大学の学生証</li>
+                <li>所属する大学の利用カード</li>
+            </ul>
+        </li>
+        <li><span>本学卒業生の方</span>
+            <ul>
+                <li>ご本人確認書類（例：運転免許証など）</li>
+            </ul>
+        </li>
+        <li><span>その他の方</span>
+            <ul>
+                <li>紹介状</li>
+                <li>ご本人確認書類（例：運転免許証など）</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>開館時間</h2>
+
+<table border="1">
+<tr>
+<th colspan="2" class="day">曜日</th>
+<th>4F</th>
+<th>5F</th>
+</tr>
+<tr>
+<th rowspan="2" class="day">月～金</th>
+<th colspan="1" class = "one" >通常</th>
+<td class = "one">8:45-20:45</td>
+<td class = "one">8:45-18:45</td>
+</tr>
+<tr>
+<th colspan="1" class="two">短縮</th>
+<td class = "two">9:00-16:45</td>
+<td class = "two">9:00-16:45</td>
+</tr>
+<tr>
+<th colspan="2" class="day">祝日授業開講日</th>
+<td>9:00-16:45</td>
+<td>9:00-16:45</td>
+</tr>
+<tr>
+<th colspan="2" class="day">土・日・祝日</th>
+<td colspan="2">閉館</td>
+</tr>
+</table>
+
+<h2 id="my">マイライブラリ</h2>
+<p>図書館利用者個人のページです．<br />
+<a href="https://www.teu.ac.jp/lib/">マイライブラリへのリンク</a>
+</p>
+
+<p><strong>※「マイライブラリへのリンク」の文字に「https://www.teu.ac.jp/lib/」へのリンクを設定する．</strong></p>
+
+<h2 id="floor">図書館4Fフロア図</h2>
+<p><img src="./floor.png" alt="floor"/></p>
+
+<p><strong>※フロア図の絵（floor.png）を貼る．</strong></p>
+
+
+<h2>タグ解説</h2>
+
+
+<h3>&lt;head&gt;タグ</h3>
+  <p>このタグは文書のヘッダ情報を記述するために用いられる。
+  このページでは&lt;meta&gt;タグと&lt;title&gt;タグが記述されている。
+  </p>
+
+
+<h3>&lt;meta&gt;タグ</h3>
+  <p>このタグはHTMLドキュメントについて記述するために用いられる。
+  このページではhttp-equiv属性、 content属性、charset属性について記述している。
+  </p>
+
+
+  <h3>&lt;link&gt;タグ</h3>
+  <p>このタグはドキュメント同士の関係を記述するために用いられる。
+　</p>
+
+
+<h3>&lt;img&gt;タグ</h3>
+<p>このタグは画像を表示するために用いられます。
+    このページにおいては地図の絵を表示するために使用しています。<br />
+    src属性によって画像の場所を指定し、
+    alt属性によって画像が表示された無かった場合に表示される文字列を指定しています。
+</p>
+
+<h3>&lt;h1&gt;タグ</h3>
+<p>このタグはHeadingの略で、見出しを意味します。<br />
+    &lt;h1&gt;から&lt;h6&gt;まであり&lt;h1&gt;が最上位の見出し(大見出し)で、&lt;h6&gt;が最下位の見出し(小見出し)となる。<br />
+</p>
+
+<h3>&lt;table&gt;タグ</h3>
+<p>このタグは&lt;table&gt;はテーブル（表）を作成するタグです。<br />
+&lt; table &gt; 〜 &lt;/table &gt;内に&lt; tr &gt; 〜 &lt;/tr &gt;で表の横一行を定義して、<br />
+    さらにその中に&lt; th &gt; 〜 &lt;/th &gt;や &lt; td &gt; 〜 &lt;/td &gt;でセルを定義します。これが基本的な構造です。<br />
+</p>
+
+</body>
+</html>

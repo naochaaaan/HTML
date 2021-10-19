@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>背景画像の変更</title>
+    <script type="text/javascript" src="./report4.js">
+
+    </script>
+</head>
+
+<body id="body">
+
+    <h3>背景画像の変更</h3>
+
+    <table border="1">
+        <tr>
+            <th>A</th>
+            <td><img src="./a.gif" alt="A" onclick="change2a()" /></td>
+        </tr>
+        <tr>
+            <th>B</th>
+            <td><img src="./b.gif" alt="B" onclick="change2b()" /></td>
+        </tr>
+        <tr>
+            <th>C</th>
+            <td><img src="./c.gif" alt="C" onclick="change2c()" /></td>
+        </tr>
+    </table>
+
+    <p>文字の色や背景画像が変化します。</p>
+    <hr />
+
+
+    <p>
+        JavaScriptの説明
+    </p>
+
+    <p>
+        1 ~ 5行目 : change2aメソッドではAの画像をクリックしたときに文字色、背景色、指定の画像、フォントサイズを
+                    配置する。<br/>
+        2行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得して文字を赤色に変更する。<br/>
+        3行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得して背景を赤色に変更する。<br/>
+        4行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得して「red.gif」を配置する。<br/>
+        5行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得してフォントサイズをx-largeに設定する。<br/>
+    </p>
+
+    <p>
+        7 ~ 12行目 : change2bメソッドではBの画像をクリックしたときに文字色、背景色、指定の画像、フォント、フォントサイズを
+                    配置する。<br />
+        8行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得して文字を緑色に変更する。<br/>
+        9行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得して背景を緑色に変更する。<br/>
+        10行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得して「green.gif」を配置する。<br/>
+        11行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得してフォントをMS明朝に変更する。<br/>
+        12行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得してフォントサイズを75％に設定する。<br/>
+    </p>
+
+    <p>
+        14 ~ 19行目 : change2cメソッドではCの画像をクリックしたときに文字色、背景色、指定の画像を
+                    配置する、フォントを変更するということを行う。<br />
+        15行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得して文字色を青色に変更する。<br/>
+        16行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得して背景色を青色に変更する。<br />
+        17行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得して「blue.gif」を配置する。<br />
+        18行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得してフォントを「arial black」に変更する。<br />
+        19行目 : getElementByIdメソッドでdocument中のid属性&quot;body&quot;を取得してフォントサイズを100％に設定する。
+    </p>
+</body>
+
+</html>
